@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepSeek API Docs</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #fff; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+<iframe id="frame" title="DeepSeek API Docs" allowfullscreen></iframe>
+<noscript><p style="font-family: sans-serif; padding: 1em;"><a href="https://api-docs.deepseek.com/zh-cn/">DeepSeek API Docs</a></p></noscript>
+<script>
+  (function () {
+    var path = location.pathname;
+    var suffix = location.search + location.hash;
+    if (path === "/" || path === "") path = "/zh-cn/";
+    document.getElementById("frame").src = "https://api-docs.deepseek.com" + path + suffix;
+  })();
+</script>
+</body>
+</html>
